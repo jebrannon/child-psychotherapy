@@ -1,0 +1,35 @@
+/*
+ *  File :    main.less
+ *  Info :    This is the core/primary stylesheet for the whole site, all other stylesheets are pulled in by this one.
+ *  Usage :   <link rel='stylesheet' href='/path/to/file/syle.css') }}' />
+ *
+ */
+
+
+/*
+		Mixins
+*/
+@import "mixins/typography";
+@import "mixins/cross-browser";
+
+
+/*
+		Base styles
+*/
+@import "core/normalize";
+@import "core/defaults";
+@import "core/helpers";
+
+
+/*
+		Theme
+*/
+@import "theme/colour-scheme";
+@import "theme/typography-scheme";
+
+
+/*
+		Layout
+*/
+@import "layout/navigation";
+@import "layout/home";

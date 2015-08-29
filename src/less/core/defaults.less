@@ -1,0 +1,70 @@
+/*
+ *	File :		_base/default.less
+ *	Info : 		This is for the remaining globally applied styling a resets not covered in 'normalize.less'.
+ *	Usage : 	@import "_base/defaults.less";
+ *
+ */
+
+@small: ~"only screen and (min-width: 480px)";
+@medium: ~"only screen and (min-width: 768px)";
+@large: ~"only screen and (min-width: 1024px)";
+
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+
+	* {
+		.box-sizing(border-box);
+	}
+
+	body {
+		height: 100%;
+
+		a,
+		b,
+		s {
+			font-weight: 100;
+		}
+
+		s {
+			text-decoration: none;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		a {
+			font-weight: 700;
+		}
+
+		p,
+		pre,
+		blockquote,
+		a,
+		ul,
+		ol,
+		li,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0;
+			padding: 0;
+		}
+
+		ul,
+		li {
+			list-style: none;
+		}
+
+	}
+
+	iframe {
+		border: 0;
+	  	max-width: 100%;
+	}
+}

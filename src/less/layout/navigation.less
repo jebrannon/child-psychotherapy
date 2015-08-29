@@ -1,0 +1,158 @@
+/*
+ *  File :    layout/navigation.less
+ *  Info :    Layout for website navigation.
+ *  Usage :   @import "_layout/menu.less";
+ *
+ */
+
+.is-nav {
+
+	#Navigation {
+
+		.transform(translate(0, 0));
+
+		.nav-button {
+
+			.nav-link {
+
+				&.menu {
+
+					display: none;
+				}
+
+				&.close {
+
+					display: block;
+				}
+			}
+		}
+
+		.nav-list {
+
+			margin: 0;
+		}
+	}
+}
+
+
+#Navigation {
+
+	.transform(translate(100%, 0));
+	.transition(all 0.5s ease-out);
+	display: table;
+	height: 100%;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 80%;
+
+	.icon-svg {
+
+		height: 20px;
+		width: 20px;
+	}
+
+	.nav-button {
+
+		height: 50px;
+		left: -55px;
+		position: absolute;
+
+		.nav-link {
+
+			display: block;
+			padding: 15px;
+
+			&.close {
+
+				display: none;
+			}
+		}
+	}
+
+	.nav-list {
+
+		.transition(margin 0.5s ease-out);
+		display: table;
+		height: 100%;
+		margin-left: -5px;
+		width: 100%;
+
+		.nav-item {
+
+			display: table-row;
+
+			&.home {
+
+				height: 50px;
+				margin-left: 50px;
+	
+				.nav-link {
+
+					padding-left: 15px;
+				}
+			}
+
+			.nav-link  {
+
+				display: table-cell;
+				padding: 15px 15px 15px 15px;
+				text-align: center;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	@media @medium {
+
+		position: relative;
+		width: 100%;
+		z-index: 100;
+		display: block;
+		height: auto;
+		.transform(translate(0, 0));
+
+		.icon-svg {
+
+			height: 20px;
+			width: 20px;
+		}
+
+		.nav-button {
+
+			display: none;
+		}
+
+		.nav-list {
+			
+			display: table;
+			height: 100%;
+			text-align: center;
+			width: 100%;
+			margin-left: 0;
+
+			.nav-item {
+
+				display: table-cell;
+				vertical-align: middle;
+
+
+				.nav-link {
+
+					display: block;
+					padding: 20px 30px 15px 30px;
+				}
+
+				&.home {
+
+					width: 50px;
+
+					a {
+						
+						padding: 15px;
+					}
+				}
+			}
+		}
+	}
+}
