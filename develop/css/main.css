@@ -497,6 +497,10 @@ html iframe {
   fill: currentColor;
   pointer-events: none;
 }
+.section {
+  padding: 60px;
+  min-height: 100%;
+}
 /*
 		Theme
 */
@@ -716,6 +720,10 @@ html iframe {
  *  Usage :   @import "layout/home.less";
  *
  */
-#Home {
-  padding-top: 400px;
+#Home .therapy-tree {
+  text-align: center;
+}
+#Home .therapy-tree .image {
+  display: inline-block;
+  width: 80%;
 }
